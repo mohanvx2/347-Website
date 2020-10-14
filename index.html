@@ -10,6 +10,7 @@
         href="https://cdjns.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
         integrity="sha256-46qynGAkLSFpVbEBog43gvNhfr0j+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
 
+        <link rel="stylesheet" href="css/style.css">
     </head>
 
 
@@ -23,13 +24,110 @@
             </button>
             <nav class = "nav">
                 <ul class = "nav__list">
-                    <li class = "nav__item"><a href = "#" class ="nav__link">Home</a></li>
-                    <li class = "nav__item"><a href = "#" class ="nav__link">About Me</a></li>
-                    <li class = "nav__item"><a href = "#" class ="nav__link">Creation Center</a></li>
-                    <li class = "nav__item"><a href = "#" class ="nav__link">Qualifications</a></li>
-                    <li class = "nav__item"><a href = "#" class ="nav__link">Contact Me</a></li>
+                    <li class = "nav__item"><a href = "#home" class ="nav__link">Home</a></li>
+                    <li class = "nav__item"><a href = "#services" class ="nav__link">Services</a></li>
+                    <li class = "nav__item"><a href = "#about" class ="nav__link">About Me</a></li>
+                    <li class = "nav__item"><a href = "#createcenter" class ="nav__link">Creation Center</a></li>
+                    <li class = "nav__item"><a href = "#qualifcations" class ="nav__link">Qualifications</a></li>
+                    <li class = "nav__item"><a href = "#contact" class ="nav__link">Contact Me</a></li>
                 </ul>
             </nav>
         </header>
+
+        <!--INTRODUCTION-->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi! I am <strong>Jake Schaffner</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Industrial Designer</p>
+            <img src="WebsiteAssets/JakeHeadshot.jpg" alt="a picture of Jake Schaffner smiling" class = "intro__img">
+            </section>
+
+        <!--SERVICES OFFERED-->
+        <section class="my-services" id="services">
+            <h2 class="section__title section__title--services">What I do</h2>
+            <div class="services">
+            <div class="service">
+                <h3>Sketching/Rendering</h3>
+                <p>Senectus aliquam semper tortor imperdiet augue ut? Sociis, semper habitasse accumsan 
+                    habitasse mauris ut vestibulum aliquet donec pellentesque augue. Interdum proin ipsum scelerisque 
+                    proin ultricies porta molestie pulvinar lacinia quam eleifend.
+                    Mus platea rutrum per taciti, non lorem.</p>
+            </div><!--/service-->
+            <div class="service">
+                <h3>Industry Standard Software</h3>
+                <p>Senectus aliquam semper tortor imperdiet augue ut? Sociis, semper habitasse accumsan 
+                    habitasse mauris ut vestibulum aliquet donec pellentesque augue. Interdum proin ipsum scelerisque 
+                    proin ultricies porta molestie pulvinar lacinia quam eleifend.
+                    Mus platea rutrum per taciti, non lorem.</p>
+            </div><!--/service-->
+            <div class="service">
+                <h3>Industrial Design Consulting</h3>
+                <p>Senectus aliquam semper tortor imperdiet augue ut? Sociis, semper habitasse accumsan 
+                    habitasse mauris ut vestibulum aliquet donec pellentesque augue. Interdum proin ipsum scelerisque 
+                    proin ultricies porta molestie pulvinar lacinia quam eleifend.
+                    Mus platea rutrum per taciti, non lorem.</p>
+                </div><!--/service-->
+            </div><!--/services-->
+            <a href="work" class="btn">My Creations</a>
+        </section>
+
+        <!--ABOUT ME-->
+        <section class = "about-me" id="about">
+            <header>
+                <h2 class = "section__title section__title--about">About Me</h2>
+                <p class = "section__subtitle section__subtitle--about">Industrial Design and Consulting</p>
+            </header>
+            <div class = "about-me__body">
+                <p>Senectus aliquam semper tortor imperdiet augue ut? Sociis, semper habitasse accumsan 
+                    habitasse mauris ut vestibulum aliquet donec pellentesque augue. Interdum proin ipsum scelerisque 
+                    proin ultricies porta molestie pulvinar lacinia quam eleifend.
+                    Mus platea rutrum per taciti, non lorem</p>
+                <p>Senectus aliquam semper tortor imperdiet augue ut? Sociis, semper habitasse accumsan 
+                    habitasse mauris ut vestibulum aliquet donec pellentesque augue. Interdum proin ipsum scelerisque 
+                    proin ultricies porta molestie pulvinar lacinia quam eleifend.
+                    Mus platea rutrum per taciti, non lorem</p>
+            </div>
+            <img src = "WebsiteAssets/JakeHeadshot.jpg" alt="Placeholder for later" class="about-me__img">
+        </section>
+
+        <!--Creation Center-->
+        <section class = "my-work" id = "createcenter">
+            <h2 class = "section__title">My Creations</h2>
+            <p class = "section__subtitle"></p>
+
+            <div class = "portfolio">
+                <a href = "#" class = "portfolio__item">
+                    <img src="WebsiteAssets/JakeHeadshot.jpg" alt = "" class="portfolio__img">
+                </a>
+                <a href = "#" class = "portfolio__item">
+                    <img src="WebsiteAssets/JakeHeadshot.jpg" alt = "" class="portfolio__img">
+                </a>
+                <a href = "#" class = "portfolio__item">
+                    <img src="WebsiteAssets/JakeHeadshot.jpg" alt = "" class="portfolio__img">
+                </a>
+                <a href = "#" class = "portfolio__item">
+                    <img src="WebsiteAssets/JakeHeadshot.jpg" alt = "" class="portfolio__img">
+                </a>
+                <a href = "#" class = "portfolio__item">
+                    <img src="WebsiteAssets/JakeHeadshot.jpg" alt = "" class="portfolio__img">
+                </a>
+                <a href = "#" class = "portfolio__item">
+                    <img src="WebsiteAssets/JakeHeadshot.jpg" alt = "" class="portfolio__img">
+                </a>
+            </div>
+        </section>
+
+        <footer>
+            <a href = "mailto:schaf2ja@dukes.jmu.edu" class = "footer__link">schaf2ja@dukes.jmu.edu</a>
+            <ul class="social-list">
+                <li class ="social-list__item"> <a class="social-list__link" href="https://codepen.io">Codepen</a></li>
+                <li class ="social-list__item"> <a class="social-list__link" href="https://twitter.com">Twitter</a></li>
+                <li class ="social-list__item"> <a class="social-list__link" href="https://github.com">GitHub</a></li>
+                <li class ="social-list__item"> <a class="social-list__link" href="https://facebook.com">Facebook</a></li>
+            </ul>
+        </footer>
+
+
     </body>
-</html>>
+</html>
