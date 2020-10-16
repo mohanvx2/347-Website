@@ -5,15 +5,16 @@
 }
 /*Custom Properties: Change for later*/
 :root {
-    --ff-primary: 'Source Sans Pro', sans-serif;
-    --ff-secondary: 'Source Code Pro', monospace;
+    --ff-primary: 'Lora', serif;
+    --ff-secondary: 'Roboto Slab', serif;
 
-    --fw-reg: 300;
-    --fw-bold: 900;
-
+    --fw-reg: 400;
+    --fw-bold: 700;
+    
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #ffa245;
+    --clr-accent: rgb(212, 166, 14);
+    
 
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -280,7 +281,7 @@ header {
 
 .my-services {
     background-color: var(--clr-dark);
-    background-image: url(../WebsiteAssets/FunctionalDiagramSlingChair.png);
+    background-image: url(../WebsiteAssets/ChairDiagram.png);
     background-size: cover;
     background-blend-mode: multiply;
     color: var(--clr-light);
@@ -310,14 +311,12 @@ header {
 .service {
     max-width: 500px;
     margin: 0 auto;
-    text-align: center; /*This needs to be changed, the text under what I do is improperly aligned*/
 }
 
 @media (min-width: 800px) {
     .services {
         display: flex;
         max-width: 1000px;
-        margin: 0 auto;
         margin-left: auto;
         margin-right: auto;
     }
@@ -332,6 +331,9 @@ header {
     margin: 0 auto;
 }
 .about-me__img {
+    grid-area: img;
+    position: relative;
+    z-index: 2;
     box-shadow: var(--bs);
 }
 @media(min-width: 600px) {
@@ -350,7 +352,7 @@ header {
         grid-area: title;
     }
     .section__subtitle--about {
-        grid-column: 1/1;
+        grid-column: 1/-1;
         grid-row: 2;
         position: relative;
         left: -1em;
@@ -358,6 +360,7 @@ header {
         padding-left: 1em;
         padding-right: calc(200px + 4em);
     }
+    
     .about-me__img {
         grid-area: img;
         position: relative;
@@ -376,20 +379,16 @@ header {
 .portfolio {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
-    max-width: 0 auto; /*Might delete later*/
+    max-height: 0 auto; /*Might delete later*/
 }
 
 .portfolio__item {
     background: var(--clr-light);
-    overflow: hidden;
-    width: 100%;
-    max-height: 400px;
-    object-fit: contain;
-    
 }
 
 .portfolio__img {
-    
+    max-width: 100%;
+    max-height:100%;
     transition:
     transform 750ms cubic-bezier(.5, 0, .5, 1),
     opacity 250ms linear;
