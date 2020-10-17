@@ -287,133 +287,6 @@ header {
     }
 }
 
-/*My Services section*/
-
-.my-services {
-    background-color: var(--clr-dark);
-    background-image: url(../WebsiteAssets/ChairDiagram.png);
-    background-size: cover;
-    background-blend-mode: multiply;
-    color: var(--clr-light);
-    text-align: center;
-}
-
-.section__title--services {
-    color: var(--clr-accent);
-    position: relative;
-
-}
-
-.section__title--services::after {
-    content: '';
-    display: block;
-    width: 3em;
-    height: 1px;
-    margin: 0.5em auto 1em;
-    background: var(--clr-light);
-    opacity: 0.25;
-}
-
-.services {
-     margin-bottom: 4em;
-}
-
-.service {
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-@media (min-width: 800px) {
-    .services {
-        display: flex;
-        max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .service + .service {
-        margin-left: 2em;
-    }
-}
-
-.about-me {
-    max-width: 1000px;
-    margin: 0 auto;
-}
-.about-me__img {
-    grid-area: img;
-    position: relative;
-    z-index: 2;
-    box-shadow: var(--bs);
-}
-@media(min-width: 600px) {
-    .about-me {
-        display: grid;
-        grid-template-columns: 1fr 200px;
-        grid-template-areas: 
-            "title img"
-            "subtitle img"
-            "text img";
-        grid-column-gap: 2em;
-    }
-
-    
-    .section__title--about {
-        grid-area: title;
-    }
-    .section__subtitle--about {
-        grid-column: 1/-1;
-        grid-row: 2;
-        position: relative;
-        left: -1em;
-        width: calc(100% + 2em);
-        padding-left: 1em;
-        padding-right: calc(200px + 4em);
-    }
-    
-    .about-me__img {
-        grid-area: img;
-        position: relative;
-        z-index: 2;
-    }
-}
-
-/*Creation Center/My Work*/
-
-.my-work {
-    background-color: var(--clr-dark);
-    color: var(--clr-light);
-    text-align: center;
-}
-
-.portfolio {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
-    max-height: 0 auto; /*Might delete later*/
-}
-
-.portfolio__item {
-    background: var(--clr-light);
-}
-
-.portfolio__img {
-    max-width: 100%;
-    max-height:100%;
-    transition:
-    transform 750ms cubic-bezier(.5, 0, .5, 1),
-    opacity 250ms linear;
-}
-.portfolio__item:focus {
-    position: relative;
-    z-index: 2;
-}
-.portfolio__img:hover,
-.portfolio__item:focus .portfolio__img {
-    transform: scale(1.2);
-    opacity: .5;
-
-}
-
 /*Footer*/
 
 /*May need to create account for the images to show*/
@@ -457,4 +330,36 @@ header {
 
 .social-list__link {
     padding: .5em;
+}
+
+/*Individual portfolio items*/ 
+.portfolio {
+    background-color: var(--clr-dark);
+    background-image: url(../WebsiteAssets/BackgroundGeneric.jpg);
+    background-size: contain;
+    background-blend-mode: multiply;
+    padding: 1.5em 0;
+    font-size: var(--fs-h3);
+}
+
+.portfolio-item-individual {
+    padding: 0 2em 2em;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/*Change width depending on text*/
+.portfolio-item-individual p {
+    max-width: 600px;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    margin-left: auto;
+    margin-right: auto;
+    color: whitesmoke;
+}
+
+.portfolio-item-individual img {
+    border-color: black;
+    border: thick;
+    border: solid;
 }
