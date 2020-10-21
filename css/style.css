@@ -389,12 +389,16 @@ header {
 }
 
 .portfolio {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    flex-flow: row wrap;
+    flex-grow: 1;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
     max-height: 0 auto; /*Might delete later*/
 }
 
 .portfolio__item {
+    max-width:100%;
     background: var(--clr-light);
 }
 
