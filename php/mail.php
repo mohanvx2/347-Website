@@ -3,9 +3,9 @@
 $webmaster_email = "vmohan030@gmail.com";
 
 
-$feedback_page = "index.html";
-$error_page = "index.html";
-$thankyou_page = "index.html";
+$feedback_page = "../index.html";
+$error_page = "../index.html";
+$thankyou_page = "../index.html";
 
 
 $email_address = $_REQUEST['email_address'] ;
