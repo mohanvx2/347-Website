@@ -115,7 +115,31 @@
                 </a>
             </div>
         </section>
-
+        <!--COMMENT FORM-->
+    <section class="comment" id="form">
+        <div class="comment-form">
+            <h1>Send Jake your comments!</h1>
+            <form method="post" action="php/mail.php">
+                <p>
+                    <label>Name
+                        <input type="text" name="first_name" required>
+                    </label>
+                </p>
+                <p>
+                    <label>Email
+                        <input type="email" name="email_address">
+                    </label>
+                </p>
+                <p>
+                    <label>Comments
+                        <textarea name="comments" maxlength="500"></textarea>
+                    </label>
+                </p>
+                <p><button>Submit</button></p>
+            </form>
+        </div>
+        
+        <!--Footer/Social-->
         <footer class="footer" id="contact">
             <a href = "mailto:schaf2ja@dukes.jmu.edu" class = "footer__link">schaf2ja@dukes.jmu.edu</a>
             <ul class="social-list">
