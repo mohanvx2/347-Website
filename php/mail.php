@@ -1,6 +1,6 @@
 <?php
 
-$webmaster_email = "vmohan030@gmail.com";
+$webmaster_email = "schaf2ja@dukes.jmu.edu";
 
 
 $feedback_page = "../index.html";
